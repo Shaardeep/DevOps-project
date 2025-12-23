@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('Build'){
+            step{
+                echo 'Pipeline Running...'
+                sh './hello.sh'
+            }
+        }
+
+        stage('Test'){
+            steps{
+                echo 'Running simple test...'
+            }
+        }
+    }
+
+    post {
+        success{
+            echo 'Pipeline finished successfully'
+        }
+        failure{
+            echo 'Pipeline failed!'
+        }
+    }
+}
