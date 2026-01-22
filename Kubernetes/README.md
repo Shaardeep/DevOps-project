@@ -1,6 +1,6 @@
-Architure of kubernetes
+# Architure of kubernetes
 
-K8s has 2 main type of components -
+## K8s has 2 main type of components -
 1. Control plane -
 -  API Server
 -  etcd
