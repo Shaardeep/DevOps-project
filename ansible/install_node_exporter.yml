@@ -1,0 +1,7 @@
+- name: Install Node Exporter on all EC2 instances
+  hosts: all
+  become: yes
+
+  tasks:
+    - import_tasks: node_exporter/install.yml
+
