@@ -1,0 +1,3 @@
+End-to-End Infrastructure Monitoring Project
+
+Designed and implemented an end-to-end monitoring solution on AWS using Terraform and Ansible. Provisioned four EC2 instances: two application servers, one Prometheus server, and one Grafana server. Automated the installation and configuration of Node Exporter on all EC2 instances using Ansible. Configured Prometheus to scrape metrics from all nodes and store time-series data. Integrated Grafana with Prometheus as a data source and visualized system metrics using industry-standard dashboards. Ensured proper security group configuration and validated monitoring through Prometheus targets and Grafana dashboards.

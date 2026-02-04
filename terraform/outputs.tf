@@ -14,3 +14,7 @@ output "grafana_public_ip" {
   value = aws_instance.monitoring_ec2[3].public_ip
 }
 
+output "rds_endpoints" {
+  value = aws_db_instance.mysql.endpoint
+}
+
